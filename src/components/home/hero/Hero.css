@@ -1,0 +1,210 @@
+.hero {
+  background: linear-gradient(to right, #0a0a3a, #1a1a6a);
+  background-color: #1a1a6a;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.selections-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.count {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 0 0 10px rgba(255, 222, 89, 0.5);
+  margin-right: 1rem;
+}
+
+.title-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 3px;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  opacity: 0.8;
+}
+
+.through {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: right;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.students-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.prev-btn {
+  left: -20px;
+}
+
+.next-btn {
+  right: -20px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #ffde59;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.program-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.program-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.program-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.program-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.program-features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.program-features li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.program-features li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffde59;
+}
+
+@media screen and (max-width: 992px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .count {
+    font-size: 4rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
+  
+  .nav-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}

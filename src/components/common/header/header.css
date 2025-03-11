@@ -1,0 +1,97 @@
+/*--------head------------*/
+.head {
+  padding: 20px 0;
+  color: #fff;
+}
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.head .icon {
+  margin-left: 10px;
+}
+/*--------head------------*/
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 30px;
+  width: 100%;
+}
+
+header .flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+header ul.flexSB {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: #1e5b94;
+}
+
+.dropdown::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header ul.flexSB {
+    display: none;
+  }
+  
+  .toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .mobile-nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-nav li {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,147 @@
+footer {
+  background-color: #6e6e6e;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer .box {
+  padding: 0 15px;
+}
+
+footer .logo-img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f0ad4e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+footer .social {
+  margin-top: 30px;
+}
+
+footer .social-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer .icon {
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+footer .terms {
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+footer ul li i {
+  margin-right: 10px;
+  color: #f0ad4e;
+  min-width: 20px;
+}
+
+footer .contact ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer .contact ul li i {
+  margin-top: 5px;
+}
+
+.partners {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.partners .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.partners h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.partners h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f0ad4e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.partner {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+}
